@@ -1,7 +1,6 @@
 package com.augusto.controllers;
 
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,10 +26,6 @@ public class PessoaController {
 	@Autowired
 	PessoaRepositorio pessoaRepositorio;
 	
-	
-
-	
-	
 	@GetMapping("/{id}")
 	public Pessoa pegarPessoa(@PathVariable("id")Long id) {
 		return pessoaRepositorio.findOne(id);
@@ -47,19 +42,19 @@ public class PessoaController {
 				
 		pessoaRepositorio.save(pessoa);
 		
-		return "Produto Cadastrado";
+		return "Pessoa Cadastrada";
 	}
 	
 	@PutMapping
 	public String atualizar(@RequestBody Pessoa pessoa) {
 		pessoaRepositorio.save(pessoa);
-		return "Produto Atualizado";
+		return "Pessoa Atualizada";
 	}
 	
 	@DeleteMapping("/{id}")
 	public String deletar(@PathVariable("id")Long id) {
 	 	pessoaRepositorio.delete(id);
-	 	return "Produto com id "+id+" foi deletado ";
+	 	return "Pessoa com id "+id+" foi deletado ";
 	}
 	
 	

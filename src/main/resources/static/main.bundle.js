@@ -22,11 +22,12 @@ webpackEmptyAsyncContext.id = "../../../../../src/$$_lazy_route_resource lazy re
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ApproutingModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pessoa_pessoa_component__ = __webpack_require__("../../../../../src/app/pessoa/pessoa.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__listagem_listagem_component__ = __webpack_require__("../../../../../src/app/listagem/listagem.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pessoa_editar_pessoa_editar_pessoa_component__ = __webpack_require__("../../../../../src/app/pessoa/editar-pessoa/editar-pessoa.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/esm5/router.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pessoa_pessoa_component__ = __webpack_require__("../../../../../src/app/pessoa/pessoa.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__listagem_listagem_component__ = __webpack_require__("../../../../../src/app/listagem/listagem.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,22 +39,24 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
+
 var appRoutes = [
     { path: '', redirectTo: '/listagem', pathMatch: 'full' },
-    { path: 'listagem', component: __WEBPACK_IMPORTED_MODULE_2__listagem_listagem_component__["a" /* ListagemComponent */] },
-    { path: 'cadastro', component: __WEBPACK_IMPORTED_MODULE_1__pessoa_pessoa_component__["a" /* PessoaComponent */] }
+    { path: 'listagem', component: __WEBPACK_IMPORTED_MODULE_3__listagem_listagem_component__["a" /* ListagemComponent */] },
+    { path: 'cadastro', component: __WEBPACK_IMPORTED_MODULE_2__pessoa_pessoa_component__["a" /* PessoaComponent */] },
+    { path: 'editar', component: __WEBPACK_IMPORTED_MODULE_0__pessoa_editar_pessoa_editar_pessoa_component__["a" /* EditarPessoaComponent */] },
 ];
 var ApproutingModule = /** @class */ (function () {
     function ApproutingModule() {
     }
     ApproutingModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_3__angular_core__["J" /* NgModule */])({
+        Object(__WEBPACK_IMPORTED_MODULE_4__angular_core__["J" /* NgModule */])({
             imports: [
-                __WEBPACK_IMPORTED_MODULE_4__angular_common__["b" /* CommonModule */],
-                __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* RouterModule */].forRoot(appRoutes),
+                __WEBPACK_IMPORTED_MODULE_5__angular_common__["b" /* CommonModule */],
+                __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* RouterModule */].forRoot(appRoutes),
             ],
             exports: [
-                __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* RouterModule */]
+                __WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* RouterModule */]
             ]
         })
     ], ApproutingModule);
@@ -140,12 +143,16 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__app_component__ = __webpack_require__("../../../../../src/app/app.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pessoa_pessoa_component__ = __webpack_require__("../../../../../src/app/pessoa/pessoa.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pessoa_editar_pessoa_editar_pessoa_component__ = __webpack_require__("../../../../../src/app/pessoa/editar-pessoa/editar-pessoa.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pgnf_pgnf_component__ = __webpack_require__("../../../../../src/app/pgnf/pgnf.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -169,7 +176,9 @@ var AppModule = /** @class */ (function () {
             declarations: [
                 __WEBPACK_IMPORTED_MODULE_13__app_component__["a" /* AppComponent */],
                 __WEBPACK_IMPORTED_MODULE_14__pessoa_pessoa_component__["a" /* PessoaComponent */],
-                __WEBPACK_IMPORTED_MODULE_1__listagem_listagem_component__["a" /* ListagemComponent */]
+                __WEBPACK_IMPORTED_MODULE_1__listagem_listagem_component__["a" /* ListagemComponent */],
+                __WEBPACK_IMPORTED_MODULE_15__pessoa_editar_pessoa_editar_pessoa_component__["a" /* EditarPessoaComponent */],
+                __WEBPACK_IMPORTED_MODULE_16__pgnf_pgnf_component__["a" /* PgnfComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_3__angular_platform_browser__["a" /* BrowserModule */],
@@ -218,7 +227,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/listagem/listagem.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">\n\n    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\"\n        aria-label=\"Toggle navigation\">\n        <span class=\"navbar-toggler-icon\"></span>\n    </button>\n    <div class=\"collapse navbar-collapse\" id=\"navbarNav\">\n        <ul class=\"navbar-nav\">\n            <li class=\"nav-item active\">\n                <a class=\"nav-link\" href=\"#\">Home\n                    <span class=\"sr-only\">(current)</span>\n                </a>\n            </li>\n\n        </ul>\n    </div>\n</nav>\n<h3>Listagem de Pessoas</h3>\n<div class=\"row w-75 p-3\">\n    <div class=\"form-group\" class=\"col-md-4\">\n        <label>Nome: </label>\n        <input type=\"text\" class=\"form-control\" name=\"nome\">\n    </div>\n    <div class=\"form-group\" class=\"col-md-4\">\n        <label>CPF: </label>\n        <input type=\"text\" class=\"form-control\" name=\"cpf\">\n        \n    </div>\n    \n    <div class=\"btn-group row w-75 p-3 col-md-4\">\n        <button type=\"button\" class=\"btn btn-secondary btn-sm\">Pesquisar</button>\n        <button type=\"button\" routerLink=\"/cadastro\" routerLinkActive=\"active\" class=\"btn btn-outline-success btn-sm\">Cadastrar</button>\n    </div>\n\n</div>\n<hr>\n<table class=\"table table-hover\">\n    <thead>\n        <tr>\n            <th>Id</th>\n            <th>Nome</th>\n            <th>E-mail</th>\n            <th>CPF</th>\n            <th>Idade</th>\n            <th>Quantidade de Telefones</th>\n            <th>Ações</th>\n        </tr>\n    </thead>\n    <tr *ngFor=\"let pesso of pess\">\n        <td>{{pesso.pessoam.id}}</td>\n        <td>{{pesso.pessoam.nome}}</td>\n        <td>{{pesso.pessoam.email}}</td>\n        <td>{{pesso.pessoam.cpf}}</td>\n        <td>{{pesso.pessoam.idade}}</td>\n        <td>{{pesso.qtdN}}</td>\n        <td>\n            <button type=\"button\"  class=\"btn btn-outline-info btn-sm\">Editar</button>\n            <button type=\"button\" (click)=\"excluirPessoa(pesso.pessoam)\" \n            routerLink=\"/\" class=\"btn btn-outline-danger btn-sm\">Excluir</button>\n\n        </td>\n\n    </tr>\n</table>"
+module.exports = "<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">\n\n    <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\"\n        aria-label=\"Toggle navigation\">\n        <span class=\"navbar-toggler-icon\"></span>\n    </button>\n    <div class=\"collapse navbar-collapse\" id=\"navbarNav\">\n        <ul class=\"navbar-nav\">\n            <li class=\"nav-item active\">\n                <a class=\"nav-link\" href=\"#\">Home\n                    <span class=\"sr-only\">(current)</span>\n                </a>\n            </li>\n\n        </ul>\n    </div>\n</nav>\n<h3>Listagem de Pessoas</h3>\n<div class=\"row w-75 p-3\">\n    <div class=\"form-group\" class=\"col-md-4\">\n        <label>Nome: </label>\n        <input type=\"text\" class=\"form-control\" name=\"nome\">\n    </div>\n    <div class=\"form-group\" class=\"col-md-4\">\n        <label>CPF: </label>\n        <input type=\"text\" class=\"form-control\" name=\"cpf\">\n        \n    </div>\n    \n    <div class=\"btn-group row w-75 p-3 col-md-4\">\n        <button type=\"button\" class=\"btn btn-secondary btn-sm\">Pesquisar</button>\n        <button type=\"button\" routerLink=\"/cadastro\" routerLinkActive=\"active\" class=\"btn btn-outline-success btn-sm\">Cadastrar</button>\n    </div>\n\n</div>\n<hr>\n<table class=\"table table-hover\">\n    <thead>\n        <tr>\n            <th>Id</th>\n            <th>Nome</th>\n            <th>E-mail</th>\n            <th>CPF</th>\n            <th>Idade</th>\n            <th>Quantidade de Telefones</th>\n            <th>Ações</th>\n        </tr>\n    </thead>\n    <tr *ngFor=\"let pesso of pess\">\n        <td>{{pesso.pessoam.id}}</td>\n        <td>{{pesso.pessoam.nome}}</td>\n        <td>{{pesso.pessoam.email}}</td>\n        <td>{{pesso.pessoam.cpf}}</td>\n        <td>{{2018 - pesso.pessoam.dataDeNascimento.getFullYear()}} Anos</td>\n        <td>{{pesso.qtdN}}</td>\n        <td>\n            <button type=\"button\" routerLink=\"/editar\" (click)=\"chamaEditor(pesso.pessoam)\"  class=\"btn btn-outline-info btn-sm\">Editar</button>\n            <button type=\"button\" (click)=\"excluirPessoa(pesso.pessoam)\" \n             class=\"btn btn-outline-danger btn-sm\">Excluir</button>\n\n        </td>\n\n    </tr>\n</table>"
 
 /***/ }),
 
@@ -227,8 +236,10 @@ module.exports = "<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">\
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListagemComponent; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pessoa_pessoa_service__ = __webpack_require__("../../../../../src/app/pessoa/pessoa.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pessoa_pessoa_model__ = __webpack_require__("../../../../../src/app/pessoa/pessoa.model.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__pessoa_pessoa_service__ = __webpack_require__("../../../../../src/app/pessoa/pessoa.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common__ = __webpack_require__("../../../common/esm5/common.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -240,18 +251,22 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
+
 var ListagemComponent = /** @class */ (function () {
-    function ListagemComponent(pessoaService) {
+    function ListagemComponent(pessoaService, location) {
         this.pessoaService = pessoaService;
+        this.location = location;
+        ListagemComponent_1.pessoaEditar = new __WEBPACK_IMPORTED_MODULE_0__pessoa_pessoa_model__["a" /* Pessoa */];
         this.pessoas = new Array();
         this.pess = new Array;
-        this.refreshDados();
+        this.pess = this.todasPessoas();
     }
+    ListagemComponent_1 = ListagemComponent;
     ListagemComponent.prototype.ngOnInit = function () {
-        console.log(this.pessoaService.getPessoas);
     };
     ListagemComponent.prototype.refreshDados = function () {
-        this.pess = this.todasPessoas();
+        location.reload();
     };
     ListagemComponent.prototype.todasPessoas = function () {
         return this.pessoaService.getPessoas();
@@ -259,23 +274,122 @@ var ListagemComponent = /** @class */ (function () {
     ListagemComponent.prototype.excluirPessoa = function (pesso) {
         if (confirm("deseja realmente excluir " + pesso.nome)) {
             this.pessoaService.deteletarPessoa(pesso.id).subscribe();
+            this.refreshDados();
         }
-        this.refreshDados();
     };
-    ListagemComponent.prototype.chamaEditor = function () {
+    ListagemComponent.prototype.chamaEditor = function (pessoa) {
+        console.log(JSON.stringify(pessoa));
+        ListagemComponent_1.pessoaEditar = pessoa;
     };
-    ListagemComponent = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["n" /* Component */])({
+    ListagemComponent = ListagemComponent_1 = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_2__angular_core__["n" /* Component */])({
             selector: 'app-listagem',
             template: __webpack_require__("../../../../../src/app/listagem/listagem.component.html"),
             styles: [__webpack_require__("../../../../../src/app/listagem/listagem.component.css")],
             providers: [
-                __WEBPACK_IMPORTED_MODULE_0__pessoa_pessoa_service__["a" /* PessoaService */]
+                __WEBPACK_IMPORTED_MODULE_1__pessoa_pessoa_service__["a" /* PessoaService */]
             ]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__pessoa_pessoa_service__["a" /* PessoaService */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__pessoa_pessoa_service__["a" /* PessoaService */], __WEBPACK_IMPORTED_MODULE_3__angular_common__["f" /* Location */]])
     ], ListagemComponent);
     return ListagemComponent;
+    var ListagemComponent_1;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/pessoa/editar-pessoa/editar-pessoa.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/pessoa/editar-pessoa/editar-pessoa.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<nav class=\"navbar navbar-expand-lg navbar-light bg-light\">\n\n  <button class=\"navbar-toggler\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\"\n      aria-label=\"Toggle navigation\">\n      <span class=\"navbar-toggler-icon\"></span>\n  </button>\n  <div class=\"collapse navbar-collapse\" id=\"navbarNav\">\n      <ul class=\"navbar-nav\">\n          <li class=\"nav-item active\">\n              <a class=\"nav-link\" href=\"#\">Home\n                  <span class=\"sr-only\">(current)</span>\n              </a>\n          </li>\n\n      </ul>\n  </div>\n</nav>\n<div>\n  <form #f=\"ngForm\" (ngSubmit)=\"onSubmit(f)\">\n      <h3>Editar Pessoa</h3>\n      <div class=\"row\">\n          <div class=\"w-25 p-3\">\n\n              <div class=\"form-group\">\n                  <label>Nome: </label>\n                  <input  type=\"text\" class=\"form-control\" name=\"nome\" [(ngModel)]=\"pessoa.nome\">\n              </div>\n\n              <div class=\"form-group\">\n                  <label>Email:</label>\n                  <input type=\"email\" class=\"form-control\" id=\"Email\" placeholder=\"email\" name=\"email\" [(ngModel)]=\"pessoa.email\">\n\n              </div>\n\n          </div>\n          <div class=\"w-25 p-3\">\n\n              <div class=\"form-group\">\n                  <label>CPF: </label>\n                  <input type=\"text\" class=\"form-control\" maxlength=\"15\" name=\"cpf\" [(ngModel)]=\"pessoa.cpf\">\n              </div>\n              <div class=\"form-group\">\n                  <label>Data de Nascimento: </label>\n                  <input type=\"date\" class=\"form-control\" name=\"dataDeNascimento\" [(ngModel)]=\"pessoa.dataDeNascimento\">\n              </div>\n\n          </div>\n      </div>\n\n      <div>\n          <div>\n              <label> DDD</label>\n              <input type=\"text\" maxlength=\"2\" class=\" input-sm col-md-1\" name=\"ddd\" [(ngModel)]=\"phone.ddd\" >\n\n              <label>Numero</label>\n              <input type=\"text\" class=\"col-md-1\" name=\"numero\"  [(ngModel)]=\"phone.numero\">\n\n              <button type=\"button\" class=\"btn btn-primary col-md-1\" (click)=\"salvarTelefone()\">Adicionar</button>\n\n          </div>\n\n      </div>\n\n      <div class=\"w-50 p-3\">\n          <table class=\"table table-hover\">\n              <thead>\n                  <tr>\n                      <th>DDD</th>\n                      <th>Telefone</th>\n                      <th>Ações</th>\n                  </tr>\n              </thead>\n              <tbody>\n                  <tr *ngFor=\"let telefone of telefones\">\n                      <td>{{telefone.ddd}}</td>\n                      <td>{{telefone.numero}}</td>\n                      <td><button type=\"button\" (click)=\"removerNumero(telefone)\" class=\"btn btn-danger\">Excluir</button></td>\n                  </tr>\n              </tbody>\n          </table>\n\n      </div>\n\n      <button type=\"submit\" class=\"btn btn-primary col-md-1\" (click)=\"atualizarNoBanco()\"\n       routerLink=\"/listagem\" routerLinkActive=\"active\">Atualizar</button>\n  </form>\n  \n</div>\n\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/pessoa/editar-pessoa/editar-pessoa.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EditarPessoaComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__pessoa_service__ = __webpack_require__("../../../../../src/app/pessoa/pessoa.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__telefone_model__ = __webpack_require__("../../../../../src/app/pessoa/telefone.model.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__listagem_listagem_component__ = __webpack_require__("../../../../../src/app/listagem/listagem.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pessoa_model__ = __webpack_require__("../../../../../src/app/pessoa/pessoa.model.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+var EditarPessoaComponent = /** @class */ (function () {
+    function EditarPessoaComponent(pessoaService) {
+        this.pessoaService = pessoaService;
+        this.pessoa = __WEBPACK_IMPORTED_MODULE_2__listagem_listagem_component__["a" /* ListagemComponent */].pessoaEditar;
+        this.phone = new __WEBPACK_IMPORTED_MODULE_1__telefone_model__["a" /* Telefone */];
+    }
+    EditarPessoaComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.telefones = new Array;
+        this.pessoa.telefones.forEach(function (element) {
+            _this.telefones.push(element);
+        });
+    };
+    EditarPessoaComponent.prototype.salvarTelefone = function () {
+        var telefone = new __WEBPACK_IMPORTED_MODULE_1__telefone_model__["a" /* Telefone */];
+        telefone.ddd = this.phone.ddd;
+        telefone.numero = this.phone.numero;
+        this.telefones.push(telefone);
+    };
+    EditarPessoaComponent.prototype.removerNumero = function (phone) {
+        this.telefones.splice(this.telefones.indexOf(phone), 1);
+    };
+    EditarPessoaComponent.prototype.atualizarNoBanco = function () {
+        var _this = this;
+        this.pessoa.telefones = new Array;
+        this.telefones.forEach(function (element) {
+            _this.pessoa.telefones.push(element);
+        });
+        console.log("fred vs " + JSON.stringify(this.pessoa));
+        this.pessoaService.atualizarPessoa(this.pessoa).subscribe();
+    };
+    EditarPessoaComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_4__angular_core__["n" /* Component */])({
+            selector: 'app-editar-pessoa',
+            template: __webpack_require__("../../../../../src/app/pessoa/editar-pessoa/editar-pessoa.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/pessoa/editar-pessoa/editar-pessoa.component.css")],
+            providers: [__WEBPACK_IMPORTED_MODULE_3__pessoa_model__["a" /* Pessoa */]]
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__pessoa_service__["a" /* PessoaService */]])
+    ], EditarPessoaComponent);
+    return EditarPessoaComponent;
 }());
 
 
@@ -339,7 +453,6 @@ var PessoaComponent = /** @class */ (function () {
     }
     PessoaComponent.prototype.salvarNoBanco = function () {
         this.pessoa.telefones = this.phones;
-        console.log(JSON.stringify(this.pessoa));
         this.pessoaService.salvarPessoaNoBanco(this.pessoa);
     };
     PessoaComponent.prototype.salvarTelefone = function () {
@@ -347,10 +460,8 @@ var PessoaComponent = /** @class */ (function () {
         this.phone.ddd = this.telefone.ddd;
         this.phone.numero = this.telefone.numero;
         this.phones.push(this.phone);
-        alert(JSON.stringify(this.phones));
     };
     PessoaComponent.prototype.removerNumero = function (phone) {
-        alert("valor do array" + this.phones.indexOf(phone));
         this.phones.splice(this.phones.indexOf(phone), 1);
     };
     PessoaComponent.prototype.ngOnInit = function () {
@@ -398,6 +509,7 @@ var Pessoa = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/map.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_catch__ = __webpack_require__("../../../../rxjs/_esm5/add/operator/catch.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__telefone_model__ = __webpack_require__("../../../../../src/app/pessoa/telefone.model.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__angular_core___ = __webpack_require__("../../../core/esm5/core.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -416,10 +528,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var PessoaService = /** @class */ (function () {
     function PessoaService(http, httpCliente) {
         this.http = http;
         this.httpCliente = httpCliente;
+        this.emitirPessoa = new __WEBPACK_IMPORTED_MODULE_8__angular_core___["w" /* EventEmitter */]();
+        this.u = "";
+        this.url = "/pessoa/";
+        this.pessoasUrl = "/pessoa/todas";
         this.headers = new __WEBPACK_IMPORTED_MODULE_4__angular_http__["a" /* Headers */]({ 'Content-Type': 'application/json' });
         this.httpOptions = {
             headers: new __WEBPACK_IMPORTED_MODULE_3__angular_common_http__["c" /* HttpHeaders */]({
@@ -427,30 +544,21 @@ var PessoaService = /** @class */ (function () {
                 'Authorization': 'my-auth-token'
             })
         };
-        this.u = "http://localhost:8080";
-        this.url = "/pessoa/";
-        this.pessoasUrl = "/pessoa/todas";
     }
     PessoaService.prototype.deteletarPessoa = function (id) {
-        console.log(this.url + id);
+        console.log(this.u + this.url + id);
         return this.httpCliente.delete(this.u + this.url + id, this.httpOptions).pipe();
     };
     PessoaService.prototype.salvarPessoaNoBanco = function (pessoa) {
-        return this.http.post(this.url, {
-            "nome": pessoa.nome,
-            "cpf": pessoa.cpf,
-            "dataDeNascimento": pessoa.dataDeNascimento,
-            "telefones": JSON.stringify(pessoa.telefones)
-        }, { headers: this.headers })
+        console.log(JSON.stringify(pessoa.nome));
+        return this.http.post(this.u + this.url, JSON.stringify(pessoa), { headers: this.headers })
             .toPromise()
             .then(function (res) { return res.json(); })
             .catch(this.handleErrore);
     };
-    PessoaService.prototype.pegarPessoas = function () {
-        return this.http.get(this.pessoasUrl)
-            .toPromise()
-            .then(function (response) { return response.json(); })
-            .catch(this.handleErrore);
+    PessoaService.prototype.atualizarPessoa = function (pessoa) {
+        return this.httpCliente.put(this.u + this.url, JSON.stringify(pessoa), this.httpOptions)
+            .pipe();
     };
     PessoaService.prototype.getPessoas = function () {
         var pps = new Array();
@@ -462,14 +570,15 @@ var PessoaService = /** @class */ (function () {
                 pp.pessoam.id = data[i].id;
                 pp.pessoam.nome = data[i].nome;
                 pp.pessoam.cpf = data[i].cpf;
-                pp.pessoam.dataDeNascimento = data[i].dataDeNascimento;
-                for (var x = 0; x < data[i].telefone.length; x++) {
+                pp.pessoam.email = data[i].email;
+                pp.pessoam.dataDeNascimento = new Date(data[i].dataDeNascimento);
+                var telefones = new Array();
+                for (var x = 0; x < data[i].telefones.length; x++) {
                     var telefone = new __WEBPACK_IMPORTED_MODULE_7__telefone_model__["a" /* Telefone */]();
-                    var telefones = new Array();
-                    pp.qtdN = data[i].telefone.length;
-                    telefone.id = data[i].telefone[x].id;
-                    telefone.ddd = data[i].telefone[x].ddd;
-                    telefone.numero = data[i].telefone[x].numero;
+                    pp.qtdN = data[i].telefones.length;
+                    telefone.id = data[i].telefones[x].id;
+                    telefone.ddd = data[i].telefones[x].ddd;
+                    telefone.numero = data[i].telefones[x].numero;
                     telefones.push(telefone);
                     pp.pessoam.telefones = telefones;
                 }
@@ -517,6 +626,67 @@ var Telefone = /** @class */ (function () {
     function Telefone() {
     }
     return Telefone;
+}());
+
+
+
+/***/ }),
+
+/***/ "../../../../../src/app/pgnf/pgnf.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/pgnf/pgnf.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<h1>Pagina não encontrada</h1>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/pgnf/pgnf.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PgnfComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var PgnfComponent = /** @class */ (function () {
+    function PgnfComponent() {
+    }
+    PgnfComponent.prototype.ngOnInit = function () {
+    };
+    PgnfComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-pgnf',
+            template: __webpack_require__("../../../../../src/app/pgnf/pgnf.component.html"),
+            styles: [__webpack_require__("../../../../../src/app/pgnf/pgnf.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], PgnfComponent);
+    return PgnfComponent;
 }());
 
 
